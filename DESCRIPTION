@@ -1,9 +1,14 @@
 Package: quotes
 Type: Package
-Title: What the package does (short line)
-Version: 1.0
-Date: 2015-12-06
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Title: Collection of quotes for a variety of topics and from renowned personalities
+Version: 0.0.0.9000
+Date: 2017-02-03
+Authors@R: person("Eduardo", "Garcia-Portugues", role = c("aut", "cre"), email = "edgarcia@est-econ.uc3m.es")
+Description: Random quotes directly from R! A collection of 75,966 quotes for a variety of topics and from renowned personalities, useful for text mining analyses.
+License: MIT
+LazyData: true
+Depends:
+    R (>= 2.10.0)
+URL: https://github.com/egarpor/quotes
+BugReports: https://github.com/egarpor/quotes (preferably) or email.
+RoxygenNote: 5.0.1
