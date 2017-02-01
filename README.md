@@ -45,7 +45,7 @@ title(paste("Wordcloud for topic \"", topic, "\"", sep = ""))
 # Wordcloud
 wordcloud(corpus, max.words = 100, col = viridis(100))
 ```
-![Wordcloud](https://github.com/egarpor/quotes/tree/master/images/wordcloud.png)
+![Wordcloud](https://raw.githubusercontent.com/egarpor/quotes/master/images/wordcloud.png)
 
 ## Credits
 
