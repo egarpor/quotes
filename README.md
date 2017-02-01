@@ -17,13 +17,35 @@ install_github("egarpor/quotes")
 
 ## Usage
 
-### Random quotes in Statistics
+### Random quotes
 
 ```r
-
+rquotes(n = 10)
+rquotes(n = 10, genre = "science")
+rquotes(n = 10, author = "Bertrand Russell")
 ```
 
 ### Simple wordcloud
+
+```r
+library(tm)
+library(wordcloud)
+library(viridis)
+
+# Preprocessing
+topic <- "time"
+corpus <- Corpus(VectorSource(subset(quotes, subset = genre == topic, select = "quote")))
+corpus <- tm_map(corpus, removePunctuation)
+corpus <- tm_map(corpus, stripWhitespace)
+corpus <- tm_map(corpus, removeNumbers)
+corpus <- tm_map(corpus, removeWords, c(stopwords("english"), topic))
+corpus <- tm_map(corpus, stemDocument)
+title(paste("Wordcloud for topic \"", topic, "\"", sep = ""))
+
+# Wordcloud
+wordcloud(corpus, max.words = 100, col = viridis(100))
+```
+![Wordcloud](https://github.com/egarpor/quotes/tree/master/images/wordcloud.png)
 
 ## Credits
 
