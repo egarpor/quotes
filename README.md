@@ -21,8 +21,8 @@ install_github("egarpor/quotes")
 
 ```r
 rquotes(n = 10)
-rquotes(n = 10, genre = "science")
-rquotes(n = 10, author = "Bertrand Russell")
+rquotes(n = 10, top = "science")
+rquotes(n = 10, auth = "Bertrand Russell")
 ```
 
 ### Simple wordcloud
@@ -33,17 +33,17 @@ library(wordcloud)
 library(viridis)
 
 # Preprocessing
-topic <- "time"
-corpus <- Corpus(VectorSource(subset(quotes, subset = genre == topic, select = "quote")))
+top <- "time"
+corpus <- Corpus(VectorSource(quotes[topic == top]$quote))
 corpus <- tm_map(corpus, removePunctuation)
 corpus <- tm_map(corpus, stripWhitespace)
 corpus <- tm_map(corpus, removeNumbers)
-corpus <- tm_map(corpus, removeWords, c(stopwords("english"), topic))
+corpus <- tm_map(corpus, removeWords, c(stopwords("english"), top))
 corpus <- tm_map(corpus, stemDocument)
-title(paste("Wordcloud for topic \"", topic, "\"", sep = ""))
 
 # Wordcloud
 wordcloud(corpus, max.words = 100, col = viridis(100))
+title(paste("Wordcloud for topic \"", top, "\"", sep = ""))
 ```
 ![Wordcloud](https://raw.githubusercontent.com/egarpor/quotes/master/images/wordcloud.png)
 

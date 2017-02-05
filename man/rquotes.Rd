@@ -2,33 +2,39 @@
 % Please edit documentation in R/rquotes.R
 \name{rquotes}
 \alias{rquotes}
-\title{Quote sampler}
+\title{Sample random quotes}
 \usage{
-rquotes(n, author, genre, replace = TRUE)
+rquotes(n, auth, top, replace = FALSE)
 }
 \arguments{
-\item{n}{TODO}
+\item{n}{number of quotes to sample.}
 
-\item{author}{TODO}
+\item{auth}{filter by author, see examples.}
 
-\item{genre}{TODO}
+\item{top}{filter by topic, see examples.}
 
 \item{replace}{Should sampling be with replacement?}
 }
 \value{
-TODO
+A \code{data.frame} formed by \code{n} rows of \code{\link{quotes}}.
 }
 \description{
-TODO
+Random selection of qutes, with optional author and topic filtering.
 }
 \details{
-TODO
+If
 }
 \examples{
+# authors and topics
+levels(quotes$author)
+levels(quotes$topic)
+
+# Random quotes
 set.seed(345678)
 rquotes(n = 10)
-rquotes(n = 10, genre = "science")
-rquotes(n = 10, author = "Bertrand Russell")
+rquotes(n = 10, auth = "Bertrand Russell")
+rquotes(n = 10, top = "science")
+rquotes(n = 10, auth = "Bertrand Russell", top = "love")
 }
 \author{
 Eduardo Garcia-Portugues (\email{edgarcia@est-econ.uc3m.es}).
