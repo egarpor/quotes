@@ -1,7 +1,7 @@
 quotes
 ======
 
-[![Travis-CI Build Status](https://travis-ci.org/egarpor/quotes.svg)](https://travis-ci.com/egarpor/quotes)
+[![Travis-CI Build Status](https://travis-ci.org/egarpor/quotes.svg)](https://travis-ci.org/egarpor/quotes)
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
