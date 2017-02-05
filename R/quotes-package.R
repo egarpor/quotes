@@ -46,7 +46,9 @@ NULL
 #' corpus <- tm_map(corpus, stemDocument)
 #' 
 #' ## Wordcloud
+#' \dontrun{
 #' wordcloud(corpus, max.words = 100, col = viridis(100))
 #' title(paste("Wordcloud for topic \"", top, "\"", sep = ""))
+#' }
 #' @rdname quotes
 "quotes"
