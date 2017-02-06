@@ -6,7 +6,7 @@ quotes
 
 ## Overview
 
-Random quotes directly from `R`! A collection of quotes for a variety of topics and from renowned personalities, useful for illustrating text mining analyses.
+Random quotes directly from `R`! A collection of quotes for a variety of topics and from renowned personalities. Useful for illustrating text mining analyses.
 
 ## Install
 
