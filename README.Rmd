@@ -13,6 +13,7 @@ knitr::opts_chunk$set(
   comment = "#>",
   fig.path = "README/README-"
 )
+options(width=80)
 ```
 
 quotes
@@ -41,11 +42,11 @@ install_github("egarpor/quotes")
 # Load package
 library(quotes)
 
-# Ten random quotes
-set.seed(12345689)
-rquotes(n = 5)
-rquotes(n = 5, top = "science")
-rquotes(n = 5, auth = "Bertrand Russell")
+# Random quotes
+set.seed(654321)
+rquotes(n = 1)
+rquotes(n = 1, top = "science")
+rquotes(n = 1, auth = "Bertrand Russell")
 ```
 
 ### Wordcloud for topic-related quotes

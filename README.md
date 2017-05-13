@@ -27,65 +27,29 @@ Usage
 # Load package
 library(quotes)
 
-# Ten random quotes
-set.seed(12345689)
-rquotes(n = 5)
+# Random quotes
+set.seed(654321)
+rquotes(n = 1)
 #>       id
-#> 1: 24487
-#> 2:  1949
-#> 3: 39499
-#> 4: 22173
-#> 5: 69195
-#>                                                                                                                                                                                                                           quote
-#> 1: We are willing enough to praise freedom when she is safely tucked away in the past and cannot be a nuisance. In the present, amidst dangers whose outcome we cannot foresee, we get nervous about her, and admit censorship.
-#> 2:                                                                                                                                       It is my personality alone that has brought back the waltz and made it a global craze.
-#> 3:                                                                                             It takes most men five years to recover from a college education, and to learn that poetry is as vital to thinking as knowledge.
-#> 4:                                                                                                                         I have this fear of falling in front of large groups of people. That's why I tend not to wear heels.
-#> 5:                            Life is an unfoldment, and the further we travel the more truth we can comprehend. To understand the things that are at our door is the best preparation for understanding those that lie beyond.
-#>             author     topic
-#> 1:   E. M. Forster   freedom
-#> 2:      Andre Rieu     alone
-#> 3: Brooks Atkinson knowledge
-#> 4:    Taylor Swift      fear
-#> 5:         Hypatia    travel
-rquotes(n = 5, top = "science")
+#> 1: 74433
+#>                                                                                       quote
+#> 1: It is the working man who is the happy man. It is the idle man who is the miserable man.
+#>               author topic
+#> 1: Benjamin Franklin  work
+rquotes(n = 1, top = "science")
 #>       id
-#> 1:  4474
-#> 2: 54436
-#> 3:  7830
-#> 4: 43318
-#> 5: 47512
-#>                                                                                                                                                                                                                                                                           quote
-#> 1:                                                                                                                                                                It's an honor putting art above politics. Politics can be seductive in terms of things reductive to the soul.
-#> 2:                                                                                                                                                                                                             If there's no money in poetry, neither is there poetry in money.
-#> 3:                                                                                                                                      As a restaurateur, my job is to basically control the chaos and the drama. There's always going to be chaos in the restaurant business.
-#> 4: I believe that imagination is stronger than knowledge. That myth is more potent than history. That dreams are more powerful than facts. That hope always triumphs over experience. That laughter is the only cure for grief. And I believe that love is stronger than death.
-#> 5:                                                                                                                                   Our greatest lack is not money for any undertaking, but rather ideas, If the ideas are good, cash will somehow flow to where it is needed.
-#>                author    topic
-#> 1:     Robert Redford      art
-#> 2:      Robert Graves   poetry
-#> 3:    Rocco DiSpirito business
-#> 4:     Robert Fulghum     love
-#> 5: Robert H. Schuller    money
-rquotes(n = 5, auth = "Bertrand Russell")
-#>       id
-#> 1: 58329
-#> 2: 63435
-#> 3: 59064
-#> 4:  1122
-#> 5: 63110
-#>                                                                                                                                                                                  quote
-#> 1: I still like the relationship part of any story. You don't want your character to figure everything out and then at the end of the day, go home and eat soup from a can by herself.
-#> 2:                                                                                                         This could never be a crime in any society which deems himself enlightened.
-#> 3:                                                                                                My religion centers in different areas than what's considered conventional religion.
-#> 4:                                                                                            An artist is always alone - if he is an artist. No, what the artist needs is loneliness.
-#> 5:                                                                            The forces in a capitalist society, if left unchecked, tend to make the rich richer and the poor poorer.
-#>              author        topic
-#> 1:     Lisa Gardner relationship
-#> 2:   Jack Kevorkian      society
-#> 3:   Jack Kevorkian     religion
-#> 4:     Henry Miller        alone
-#> 5: Jawaharlal Nehru      society
+#> 1: 55390
+#>                                                                                                                                                                               quote
+#> 1: It's a good question, because a movie isn't good or bad based on its politics. It's usually good or bad for other reasons, though you might agree or disagree with its politics.
+#>         author    topic
+#> 1: Roger Ebert politics
+rquotes(n = 1, auth = "Bertrand Russell")
+#>     id
+#> 1: 306
+#>                                                                                       quote
+#> 1: Old age is ready to undertake tasks that youth shirked because they would take too long.
+#>                 author topic
+#> 1: W. Somerset Maugham   age
 ```
 
 ### Wordcloud for topic-related quotes
