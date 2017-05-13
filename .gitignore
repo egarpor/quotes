@@ -1,2 +1,7 @@
 
 *.history
+/raw
+/README/*.RData
+/README/*.rdb
+/README/*.rdx
+/README/__packages

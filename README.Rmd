@@ -1,0 +1,79 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README/README-"
+)
+```
+
+quotes
+======
+
+[![Travis-CI Build Status](https://travis-ci.org/egarpor/quotes.svg)](https://travis-ci.org/egarpor/quotes)
+[![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
+
+## Overview
+
+Random quotes directly from `R`! A collection of quotes for a variety of topics and from renowned personalities. Useful for illustrating text mining analyses.
+
+## Install
+
+```{r,eval=FALSE}
+# install.packages("devtools")
+library(devtools)
+install_github("egarpor/quotes")
+```
+
+## Usage
+
+### Random quotes
+
+```{r, random, message=FALSE, warning=FALSE,fig.asp=1, fig.align='center',cache=TRUE,cache.path="README/"}
+# Load package
+library(quotes)
+
+# Ten random quotes
+set.seed(12345689)
+rquotes(n = 5)
+rquotes(n = 5, top = "science")
+rquotes(n = 5, auth = "Bertrand Russell")
+```
+
+### Wordcloud for topic-related quotes
+
+```{r, wordcloud, message=FALSE, warning=FALSE,fig.asp=1, fig.align='center',cache=TRUE,cache.path="README/"}
+# Load packages
+library(quotes)
+library(tm)
+library(wordcloud)
+library(viridis)
+
+for (top in c("time", "life", "knowledge")) {
+
+  # Preprocessing
+  corpus <- Corpus(VectorSource(quotes[topic == top]$quote))
+  corpus <- tm_map(corpus, removePunctuation)
+  corpus <- tm_map(corpus, stripWhitespace)
+  corpus <- tm_map(corpus, removeNumbers)
+  corpus <- tm_map(corpus, removeWords, c(stopwords("english"), top))
+  corpus <- tm_map(corpus, stemDocument)
+  
+  # Wordcloud
+  wordcloud(corpus, max.words = 100, col = viridis(100))
+  title(paste("Wordcloud for topic \"", top, "\"", sep = ""))
+
+}
+```
+
+## Credits
+
+The data has been extracted from the *Famous Quotes Database* availiable on <http://thewebminer.com/download>.
