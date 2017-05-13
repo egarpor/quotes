@@ -42,6 +42,10 @@ install_github("egarpor/quotes")
 # Load package
 library(quotes)
 
+# Dataset
+str(quotes)
+head(quotes)
+
 # Random quotes
 set.seed(654321)
 rquotes(n = 1)
