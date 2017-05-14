@@ -33,6 +33,7 @@ NULL
 #' 
 #' ## Required packages
 #' library(tm)
+#' library(SnowballC)
 #' library(wordcloud)
 #' library(viridis)
 #' 

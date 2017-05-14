@@ -29,6 +29,7 @@ length(uniques)
 
 ## Required packages
 library(tm)
+library(SnowballC)
 library(wordcloud)
 library(viridis)
 

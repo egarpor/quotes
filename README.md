@@ -90,6 +90,7 @@ rquotes(n = 1, auth = "Bertrand Russell")
 # Load packages
 library(quotes)
 library(tm)
+library(SnowballC)
 library(wordcloud)
 library(viridis)
 
