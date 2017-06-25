@@ -3,7 +3,7 @@ Type: Package
 Title: Collection of quotes for a variety of topics and from renowned personalities
 Version: 0.0.1
 Date: 2017-02-05
-Authors@R: person("Eduardo", "Garcia-Portugues", role = c("aut", "cre"), email = "edgarcia@est-econ.uc3m.es")
+Authors@R: person("Eduardo", "García-Portugués", role = c("aut", "cre"), email = "edgarcia@est-econ.uc3m.es")
 Description: Random quotes directly from R! A collection of 61,071 unique quotes for a variety of topics and from renowned personalities. Useful for illustrating text mining analyses.
 License: MIT + file LICENSE
 LazyData: true
