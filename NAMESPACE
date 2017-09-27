@@ -2,3 +2,4 @@
 
 export(rquotes)
 import(data.table)
+import(stats)

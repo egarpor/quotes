@@ -21,7 +21,7 @@
 #' rquotes(n = 10, auth = "Bertrand Russell")
 #' rquotes(n = 10, top = "science")
 #' rquotes(n = 10, auth = "Bertrand Russell", top = "love")
-#' @author Eduardo Garcia-Portugues (\email{edgarcia@@est-econ.uc3m.es}).
+#' @author Eduardo García-Portugués (\email{edgarcia@@est-econ.uc3m.es}).
 #' @import data.table
 #' @export
 rquotes <- function(n, auth, top, replace = FALSE) {

@@ -13,7 +13,7 @@ rquotes(n, auth, top, replace = FALSE)
 
 \item{top}{filter by topic, see examples.}
 
-\item{replace}{Should sampling be with replacement?}
+\item{replace}{should sampling be with replacement?}
 }
 \value{
 A \code{data.frame} formed by \code{n} rows of \code{\link{quotes}}.
@@ -37,6 +37,5 @@ rquotes(n = 10, top = "science")
 rquotes(n = 10, auth = "Bertrand Russell", top = "love")
 }
 \author{
-Eduardo Garcia-Portugues (\email{edgarcia@est-econ.uc3m.es}).
+Eduardo García-Portugués (\email{edgarcia@est-econ.uc3m.es}).
 }
-

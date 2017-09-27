@@ -20,7 +20,7 @@ quotes
 ======
 
 [![Travis-CI Build Status](https://travis-ci.org/egarpor/quotes.svg)](https://travis-ci.org/egarpor/quotes)
-[![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
+[![license](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Overview
 
@@ -38,7 +38,7 @@ install_github("egarpor/quotes")
 
 ### Random quotes
 
-```{r, random, message=FALSE, warning=FALSE,fig.asp=1, fig.align='center',cache=TRUE,cache.path="README/"}
+```{r, random, message=FALSE, warning=FALSE, fig.asp=1, fig.align='center', cache=TRUE, cache.path="README/"}
 # Load package
 library(quotes)
 
@@ -55,7 +55,7 @@ rquotes(n = 1, auth = "Bertrand Russell")
 
 ### Wordcloud for topic-related quotes
 
-```{r, wordcloud, message=FALSE, warning=FALSE,fig.asp=1, fig.align='center',cache=TRUE,cache.path="README/"}
+```{r, wordcloud, message=FALSE, warning=FALSE, fig.asp=1, fig.align='center', cache=TRUE, cache.path="README/"}
 # Load packages
 library(quotes)
 library(tm)

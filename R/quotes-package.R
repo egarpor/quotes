@@ -4,9 +4,10 @@
 #'
 #' @description Random quotes directly from \code{R}! A collection of 61,071 unique quotes for a variety of topics and from renowned personalities. Useful for illustrating text mining analyses.
 #'
-#' @author Eduardo Garcia-Portugues (\email{edgarcia@@est-econ.uc3m.es}).
+#' @author Eduardo García-Portugués (\email{edgarcia@@est-econ.uc3m.es}).
 #' @docType package
 #' @name quotes-package
+#' @import stats
 NULL
 
 
@@ -28,15 +29,15 @@ NULL
 #' # Unique quotes (repeated depending on the topic classification)
 #' uniques <- unique(quotes$quote)
 #' length(uniques)
-#' 
+#'
 #' # Wordcloud for a given topic
-#' 
+#'
 #' ## Required packages
 #' library(tm)
 #' library(SnowballC)
 #' library(wordcloud)
 #' library(viridis)
-#' 
+#'
 #' ## Preprocessing
 #' top <- "time"
 #' corpus <- Corpus(VectorSource(quotes[topic == top]$quote))
@@ -45,7 +46,7 @@ NULL
 #' corpus <- tm_map(corpus, removeNumbers)
 #' corpus <- tm_map(corpus, removeWords, c(stopwords("english"), top))
 #' corpus <- tm_map(corpus, stemDocument)
-#' 
+#'
 #' ## Wordcloud
 #' \dontrun{
 #' wordcloud(corpus, max.words = 100, col = viridis(100))

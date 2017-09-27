@@ -8,6 +8,5 @@
 Random quotes directly from \code{R}! A collection of 61,071 unique quotes for a variety of topics and from renowned personalities. Useful for illustrating text mining analyses.
 }
 \author{
-Eduardo Garcia-Portugues (\email{edgarcia@est-econ.uc3m.es}).
+Eduardo García-Portugués (\email{edgarcia@est-econ.uc3m.es}).
 }
-

@@ -49,4 +49,3 @@ title(paste("Wordcloud for topic \\"", top, "\\"", sep = ""))
 }
 }
 \keyword{datasets}
-

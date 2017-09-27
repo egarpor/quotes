@@ -1,11 +1,11 @@
 Package: quotes
 Type: Package
 Title: Collection of quotes for a variety of topics and from renowned personalities
-Version: 0.0.1
+Version: 0.0.2
 Date: 2017-02-05
 Authors@R: person("Eduardo", "García-Portugués", role = c("aut", "cre"), email = "edgarcia@est-econ.uc3m.es")
 Description: Random quotes directly from R! A collection of 61,071 unique quotes for a variety of topics and from renowned personalities. Useful for illustrating text mining analyses.
-License: MIT + file LICENSE
+License: GPL-3
 LazyData: true
 Imports:
     data.table
@@ -17,5 +17,6 @@ Suggests:
     wordcloud,
     viridis
 URL: https://github.com/egarpor/quotes
-BugReports: https://github.com/egarpor/quotes (preferably) or email.
-RoxygenNote: 5.0.1
+BugReports: https://github.com/egarpor/quotes
+Encoding: UTF-8
+RoxygenNote: 6.0.1
